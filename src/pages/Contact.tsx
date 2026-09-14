@@ -41,7 +41,7 @@ export default function Contact() {
             <h1 className="text-center fw-bold mb-2">Solicita unirte</h1>
             <p className="text-center text-muted mb-4">
               Cuéntanos un poco sobre ti para darte acceso al repositorio privado. También puedes
-              escribirnos directamente por WhatsApp.
+              unirte al canal oficial de Slack.
             </p>
 
             {enviado && (
@@ -103,7 +103,7 @@ export default function Contact() {
                 <Form.Control
                   as="textarea"
                   rows={4}
-                  placeholder="¿Qué estudias? ¿Por qué quieres unirte?"
+                  placeholder="¿Qué proyecto tienes en mente? ¿Por qué quieres unirte?"
                   isInvalid={!!errors.mensaje}
                   {...register('mensaje', { required: 'Cuéntanos algo sobre ti' })}
                 />
@@ -114,16 +114,16 @@ export default function Contact() {
 
               <div className="d-grid gap-2">
                 <Button type="submit" variant="primary" disabled={isSubmitting}>
-                  Enviar solicitud
+                  Enviar mensaje
                 </Button>
                 <Button
-                  href={siteConfig.whatsappUrl}
+                  href={siteConfig.slackUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  variant="outline-success"
-                  className="d-flex align-items-center justify-content-center gap-2"
+                  variant="outline-warning"
+                  className="d-flex align-items-center justify-content-center gap-2 text-black fw-bold"
                 >
-                  <FaWhatsapp /> Prefiero escribir por WhatsApp
+                  <FaWhatsapp /> Prefiero escribir por Slack
                 </Button>
               </div>
             </Form>

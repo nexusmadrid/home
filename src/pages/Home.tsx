@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { FaWhatsapp, FaGithub, FaUsers, FaCode, FaBookOpen } from 'react-icons/fa'
+import { FaGithub, FaUsers, FaCode, FaBookOpen, FaSlack } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 import EventsCarousel from '../components/Home/EventsCarousel'
 
@@ -10,7 +10,6 @@ export default function Home() {
       {/* HERO */}
       <section className="hero">
         <Container className="hero-content text-center">
-          <span className="badge bg-primary mb-3">Comunidad de estudiantes</span>
           <h1 className="display-4 fw-bold mb-3">{siteConfig.nombreComunidad}</h1>
           <p className="lead mb-4 mx-auto" style={{ maxWidth: 640 }}>
             Conectamos talento, ideas y oportunidades. Un espacio para
@@ -18,14 +17,14 @@ export default function Home() {
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button
-              href={siteConfig.whatsappUrl}
+              href={siteConfig.slackUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="success"
+              variant="warning"
               size="lg"
               className="d-flex align-items-center gap-2"
             >
-              <FaWhatsapp /> Unirme por WhatsApp
+              <FaSlack /> Unirme por Slack
             </Button>
             <Button
               href={siteConfig.solicitudGitUrl}
@@ -33,7 +32,7 @@ export default function Home() {
               size="lg"
               className="d-flex align-items-center gap-2"
             >
-              <FaGithub /> Solicitar acceso al repo
+              <FaGithub /> Unirme por GitHub
             </Button>
           </div>
         </Container>
@@ -178,16 +177,16 @@ export default function Home() {
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button
-              href={siteConfig.whatsappUrl}
+              href={siteConfig.slackUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="success"
+              variant="warning"
               className="d-flex align-items-center gap-2"
             >
-              <FaWhatsapp /> WhatsApp
+              <FaSlack /> WhatsApp
             </Button>
             <Link to="/contact" className="btn btn-primary d-flex align-items-center gap-2">
-              Solicitar unirme
+              Contacto
             </Link>
           </div>
         </Container>

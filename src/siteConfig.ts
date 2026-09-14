@@ -5,7 +5,7 @@ export const siteConfig = {
   nombreComunidad: 'Liga Nexus',
 
   // Enlace provisional de WhatsApp (grupo o chat de invitación)
-  whatsappUrl: 'https://chat.whatsapp.com/TU-ENLACE-AQUI',
+  slackUrl: 'https://chat.whatsapp.com/TU-ENLACE-AQUI',
 
   // Formulario / correo para solicitar acceso al repositorio privado (Git)
   // Puedes apuntarlo a un Google Form, Typeform, o a un mailto:

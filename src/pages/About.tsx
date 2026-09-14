@@ -1,5 +1,5 @@
 import { Container, Button } from 'react-bootstrap'
-import { FaWhatsapp } from 'react-icons/fa'
+import { FaSlack, FaWhatsapp } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 
 
@@ -108,13 +108,13 @@ export default function About() {
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button
-              href={siteConfig.whatsappUrl}
+              href={siteConfig.slackUrl}
               target="_blank"
               rel="noopener noreferrer"
               variant="success"
               className="d-flex align-items-center gap-2"
             >
-              <FaWhatsapp /> Escríbenos por WhatsApp
+              <FaSlack /> Unirme por Slack
             </Button>
             <Button href="/contact" variant="primary">
               Ir al formulario de contacto
