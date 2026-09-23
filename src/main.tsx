@@ -13,7 +13,7 @@ import Contact from './pages/Contact'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter basename='/nexus-fork/'>
+    <BrowserRouter basename='/home'>
     <Routes>
       <Route element={<MainLayout/>}>
         <Route index element={<Home/>} path='/'></Route>
