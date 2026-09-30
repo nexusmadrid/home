@@ -3,6 +3,13 @@ body {
   font-family: $font-family-base;
 }
 
+.hacka-box {
+  background: #1e1b4b;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
 .box-300x300 {
   display: flex;
   flex-direction: column;

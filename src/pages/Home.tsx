@@ -126,15 +126,17 @@ export default function Home() {
       </section>
 
       {/* PREVIEW QUIENES SOMOS */}
-      <section className="py-5 bg-light">
+      <section className="py-5 bg-light" id="hackathon">
         <Container>
           <div className="row justify-content-center mb-5">
             <div className="">
               <h1 className="section-title text-center mb-1">HACKATHON 42442</h1>
               <h5 className='text-center mt-0'>THE CALL TO THE CHALLENGE</h5>
-              <p><strong>Objetivo:</strong> Transformar ideas en herramientas reales y útiles para la comunidad de estudiantes de 42 Madrid.</p>
-              <p><strong>Escuadrones:</strong> Equipos de 3 a 5 personas asignados por sorteo.</p>
-              <p><strong>Requisitos:</strong> Integración con la API de 42.</p>
+              <div className="hacka-box">
+                <p><strong>Objetivo:</strong> Transformar ideas en herramientas reales y útiles para la comunidad de estudiantes de 42 Madrid.</p>
+                <p><strong>Escuadrones:</strong> Equipos de 3 a 5 personas asignados por sorteo.</p>
+                <p><strong>Requisitos:</strong> Integración con la API de 42.</p>
+              </div>
               
               <h2 className="section-title text-center mb-1 h2">5 días de sprint</h2>
               <p>🟣 <strong>30 SEP Lanzamiento.</strong> </p>
@@ -143,8 +145,8 @@ export default function Home() {
               <p>🟣 <strong>7 OCT, 13:00 Peer-Evaluation.</strong> Equipos validan entre sí los repositorios y aseguran que los proyectos cumplen los requisitos mínimos.</p>
               <p>🟣 <strong>7 OCT, 16:00 Demo Day en Studio 42.</strong> 4 min Pitch + 2 min Q&A frente al jurado + resultado de peer evaluation.</p>
  
-              <h2 className="section-title text-center mb-1 h2">Recompensast</h2>
-              <p>🗓️ <strong>Compensation Days.</strong> Días adicionales de Campus para tus proyectos, asignados proporcionalmente según el ranking final. (Requiere memoria de horas en README)</p>
+              <h2 className="section-title text-center mb-1 h2">Recompensas</h2>
+              <p>🗓️ <strong>Compensation Days.</strong> 3 días adicionales de Campus para tus proyectos, asignados para todos los proyectos desarrollados. (Requiere memoria de horas en README)</p>
               <p>🚀 <strong>Showcase en La Nave.</strong> Una sesión de 15 minutos en La Nave (el día 13 de Octubre) en la que el equipo ganador demostrará sus proyectos avanzados de 42, como RAG o Agent Smith, o, si aún no los ha completado, cómo ha abordado el reto del hackathon y qué resultados ha obtenido, para mostrar a emprendedores y startups su talento emprendedor y su potencial.</p>
 
               <div className='box-300x300 p-3 mx-auto'>
@@ -161,7 +163,7 @@ export default function Home() {
           <div className="row pt-5">
             <hr />
             <p className="text-center text-muted py-3">
-              Un vistazo rápido a los eventos más importantes por venir.
+              Un vistazo rápido a los eventos más importantes por venir en los que pronto podrás participar.
             </p>
             <EventsCarousel></EventsCarousel>
           </div>
