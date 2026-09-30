@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap'
-import { FaWhatsapp, FaGithub, FaEnvelope } from 'react-icons/fa'
+import { FaEnvelope } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
+import { FaWhatsapp } from 'react-icons/fa6'
 
 export default function Footer() {
   return (
@@ -12,19 +13,10 @@ export default function Footer() {
         <div className="d-flex gap-3 fs-5">
           <a
             href={siteConfig.whatsappUrl}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-light"
-            aria-label="WhatsApp"
+            aria-label="Unirse al grupo de whatsapp"
           >
             <FaWhatsapp />
-          </a>
-          <a
-            href={siteConfig.solicitudGitUrl}
-            className="text-light"
-            aria-label="Solicitar acceso al repositorio"
-          >
-            <FaGithub />
           </a>
           <a href={`mailto:${siteConfig.email}`} className="text-light" aria-label="Correo">
             <FaEnvelope />

@@ -1,50 +1,23 @@
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { FaGithub, FaUsers, FaCode, FaBookOpen, FaSlack } from 'react-icons/fa'
+import { FaUsers, FaCode, FaBookOpen, FaSlack, FaWhatsapp } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 import EventsCarousel from '../components/Home/EventsCarousel'
+import HeroSection from '../components/Home/Hero'
+import qrCode from "../assets/images/brand/nexusqr.png"
 
 export default function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="hero">
-        <Container className="hero-content text-center">
-          <h1 className="display-4 fw-bold mb-3">{siteConfig.nombreComunidad}</h1>
-          <p className="lead mb-4 mx-auto" style={{ maxWidth: 640 }}>
-            Conectamos talento, ideas y oportunidades. Un espacio para
-            pasar de la intención a la ejecución, construyendo proyectos reales en equipo.
-          </p>
-          <div className="d-flex justify-content-center gap-3 flex-wrap">
-            <Button
-              href={siteConfig.slackUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="warning"
-              size="lg"
-              className="d-flex align-items-center gap-2"
-            >
-              <FaSlack /> Unirme por Slack
-            </Button>
-            <Button
-              href={siteConfig.solicitudGitUrl}
-              variant="outline-light"
-              size="lg"
-              className="d-flex align-items-center gap-2"
-            >
-              <FaGithub /> Unirme por GitHub
-            </Button>
-          </div>
-        </Container>
-      </section>
+      <HeroSection></HeroSection>
 
       {/* QUÉ HACEMOS */}
       <section className="py-5">
-        <Container>
-          <h2 className="section-title text-center">¿Qué hacemos?</h2>
+        <Container className='py-5'>
+          <h1 className="section-title text-center">¿Porqué existimos?</h1>
           <p className="text-center text-muted mb-5 mx-auto" style={{ maxWidth: 640 }}>
-            Compartimos apuntes, resolvemos dudas y trabajamos en proyectos reales para practicar
-            lo que vamos aprendiendo.
+            Nexus nace para conectar talento, ideas y oportunidades dentro del ecosistema de 42, creando una comunidad práctica donde estudiantes, alumni y emprendedores puedan colaborar, validar sus ideas y convertirlas en proyectos reales.
           </p>
           <Row className="g-4">
             <Col md={4}>
@@ -64,7 +37,7 @@ export default function Home() {
                 <Card.Body className="p-0">
                   <Card.Title>Proyectos</Card.Title>
                   <Card.Text className="text-muted">
-                    Trabajamos en un repositorio privado donde practicamos en equipo.
+                    Trabajamos en proyectos comunes donde colaboramos en equipo.
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -83,12 +56,12 @@ export default function Home() {
           </Row>
         </Container>
         <article className="container container-sm py-5">
-          <h1 className='h1 text-left fw-bold'>Objetivo</h1>
+          <h1 className='h1 text-center fw-bold'>Objetivo</h1>
 
-          <p className='mw-80 mb-3'>
-            La Liga Nexus  nace para conectar talento, ideas y oportunidades, creando una comunidad práctica donde estudiantes, trabajadores y emprendedores puedan colaborar, validar ideas y convertir proyectos en realidades.
+          <p className='text-center mw-80 mb-3 mt-4'>
+            Para los estudiantes, Nexus aporta comunidad, aprendizaje práctico más allá del código y oportunidades de desarrollo profesional dentro y fuera de 42. <br></br>Para 42, activa el talento del campus y refuerza la cultura de innovación. Para el ecosistema de emprendimiento (incubadoras, startups, PYMES e inversores), crea un punto de conexión con talento técnico motivado y proyectos en fase temprana.
           </p>
-        <table className='table mb-5'>
+        {/* <table className='table mb-5'>
                 <thead>
                     <tr>
                         <th>Aspecto</th>
@@ -113,9 +86,9 @@ export default function Home() {
                         <td>Crear una comunidad con ambición de construir, aprender emprendiendo y generar impacto desde la tecnología que ayude a transformar ideas en proyectos reales.</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> */}
 
-          <h2 className='h2 text-left fw-bold mb-3'>Qué aportamos</h2>
+          {/* <h2 className='h2 text-left fw-bold mb-3'>Qué aportamos</h2>
           <h3>🤝 Comunidad y networking</h3>
           <ul className='mb-3'>
               <li>Conocer personas con intereses y objetivos comunes.</li>
@@ -148,18 +121,35 @@ export default function Home() {
             <li>Construir un portfolio mediante iniciativas tangibles.</li>
             <li>Crear proyectos extraordinarios junto a equipos multidisciplinares.</li>
         </ul>
-        
+         */}
         </article>
       </section>
 
       {/* PREVIEW QUIENES SOMOS */}
       <section className="py-5 bg-light">
         <Container>
-          <h2 className="section-title text-center">Próximos eventos</h2>
-          <p className="text-center text-muted mb-5">
-            Un vistazo rápido a los eventos más importantes por venir.
-          </p>
-          <EventsCarousel></EventsCarousel>
+          <div className="row justify-content-center mb-5">
+            <div className="">
+              <h1 className="section-title text-center mb-1">HACKATHON 42442</h1>
+              <h5 className='text-center mt-0'>THE CALL TO THE CHALLENGE</h5>
+              <div className='box-300x300 p-3 mx-auto'>
+              <img
+                src={qrCode}
+                alt="Liga Nexus event"
+              />
+              </div>
+              <a className="text-center d-block mt-3 fw-bold" href={siteConfig.hackathonUrl}>
+                Formulario de inscripción: Hackathon 42442
+              </a>
+            </div>
+          </div>
+          <div className="row pt-5">
+            <hr />
+            <p className="text-center text-muted py-3">
+              Un vistazo rápido a los eventos más importantes por venir.
+            </p>
+            <EventsCarousel></EventsCarousel>
+          </div>
           <div className="text-center mt-4">
             <Link to="/about" className="btn btn-outline-primary">
               Conócenos mejor
@@ -177,17 +167,14 @@ export default function Home() {
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button
-              href={siteConfig.slackUrl}
+              href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              variant="warning"
+              variant="success"
               className="d-flex align-items-center gap-2"
             >
-              <FaSlack /> WhatsApp
+              <FaWhatsapp /> Whatsapp
             </Button>
-            <Link to="/contact" className="btn btn-primary d-flex align-items-center gap-2">
-              Contacto
-            </Link>
           </div>
         </Container>
       </section>

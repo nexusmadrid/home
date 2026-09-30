@@ -26,9 +26,9 @@ export default function Header() {
             <Nav.Link as={NavLink} to="/about">
               Quiénes somos
             </Nav.Link>
-            <Nav.Link as={NavLink} to="/contact">
+            {/* <Nav.Link as={NavLink} to="/contact">
               Contacto
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav>
         </Navbar.Collapse>
       </Container>

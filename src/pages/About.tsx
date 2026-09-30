@@ -108,16 +108,13 @@ export default function About() {
           </p>
           <div className="d-flex justify-content-center gap-3 flex-wrap">
             <Button
-              href={siteConfig.slackUrl}
+              href={siteConfig.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               variant="success"
               className="d-flex align-items-center gap-2"
             >
-              <FaSlack /> Unirme por Slack
-            </Button>
-            <Button href="/contact" variant="primary">
-              Ir al formulario de contacto
+              <FaWhatsapp /> Unirme por WhatsApp
             </Button>
           </div>
         </Container>

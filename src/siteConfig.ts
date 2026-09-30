@@ -6,10 +6,12 @@ export const siteConfig = {
 
   // Enlace provisional de WhatsApp (grupo o chat de invitación)
   slackUrl: 'https://chat.whatsapp.com/TU-ENLACE-AQUI',
+  whatsappUrl: 'https://chat.whatsapp.com/IVOGV5utx052biy8Ymk3c7',
+  hackathonUrl: 'https://docs.google.com/forms/d/e/1FAIpQLSdYkiLSaylHtvnTqpIEIT0Qw2aVbaZpCewNNoklnuIr2eYoiQ/viewform?pli=1',
 
   // Formulario / correo para solicitar acceso al repositorio privado (Git)
   // Puedes apuntarlo a un Google Form, Typeform, o a un mailto:
   solicitudGitUrl: 'mailto:tu-correo@dominio.com?subject=Solicitud%20de%20acceso%20al%20repositorio',
 
-  email: 'tu-correo@dominio.com',
+  email: 'nexusmadrid@icloud.com',
 }
