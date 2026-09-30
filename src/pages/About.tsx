@@ -1,5 +1,5 @@
 import { Container, Button } from 'react-bootstrap'
-import { FaSlack, FaWhatsapp } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 
 

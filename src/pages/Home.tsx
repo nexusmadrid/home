@@ -1,6 +1,6 @@
 import { Container, Row, Col, Button, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-import { FaUsers, FaCode, FaBookOpen, FaSlack, FaWhatsapp } from 'react-icons/fa'
+import { FaUsers, FaCode, FaBookOpen, FaWhatsapp } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 import EventsCarousel from '../components/Home/EventsCarousel'
 import HeroSection from '../components/Home/Hero'
