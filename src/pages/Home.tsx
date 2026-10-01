@@ -150,14 +150,7 @@ export default function Home() {
               <p>🚀 <strong>Showcase en La Nave.</strong> Una sesión de 15 minutos en La Nave (el día 13 de Octubre) en la que el equipo ganador demostrará sus proyectos avanzados de 42, como RAG o Agent Smith, o, si aún no los ha completado, cómo ha abordado el reto del hackathon y qué resultados ha obtenido, para mostrar a emprendedores y startups su talento emprendedor y su potencial.</p>
 
               <div className='box-300x300 p-3 mx-auto'>
-                <img
-                  src={qrCode}
-                  alt="Liga Nexus event"
-                />
-                <a className="text-center d-block mt-3 fw-bold btn btn-warning btn-lg" href={siteConfig.hackathonUrl}>
-                  ¡Inscríbete ahora!
-                </a>
-                <small><em>¡El plazo de inscripción termina a las 16:00, aprovecha!</em></small>
+                <small><em>El plazo de inscripción ha terminado, vigila tu email para recibir los integrantes de tu equipo y las bases.</em></small>
               </div>
             </div>
           </div>
