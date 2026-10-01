@@ -5,9 +5,11 @@ body {
 
 .hacka-box {
   background: #1e1b4b;
+  background: linear-gradient(rgb(30, 27, 75), rgba(30, 27, 75, 0.8), rgba(100, 14, 146, 0) 80%, rgb(100, 14, 146)), linear-gradient(90deg, rgb(30, 27, 75), rgb(53, 25, 86), rgb(29, 25, 57), rgb(30, 27, 75), rgb(53, 25, 86), rgb(51, 24, 82), rgb(30, 27, 75), rgb(77, 23, 118));
   color: white;
-  padding: 10px;
-  margin: 10px;
+  margin: 10px 10px 20px;
+  padding: 10px 15px;
+  box-shadow:0 10px 0 -5px #a38caf;
 }
 
 .box-300x300 {

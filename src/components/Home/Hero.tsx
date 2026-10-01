@@ -19,7 +19,7 @@ export default function HeroSection() {
               </p>
               <div className="d-flex justify-content-center gap-3 flex-wrap">
                 <Button
-                  href={siteConfig.slackUrl}
+                  href={siteConfig.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   variant="success"

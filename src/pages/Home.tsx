@@ -15,7 +15,7 @@ export default function Home() {
       {/* QUÉ HACEMOS */}
       <section className="py-5">
         <Container className='py-5'>
-          <h1 className="section-title text-center">¿Porqué existimos?</h1>
+          <h1 className="section-title text-center">¿Por qué existimos?</h1>
           <p className="text-center text-muted mb-5 mx-auto" style={{ maxWidth: 640 }}>
             Nexus nace para conectar talento, ideas y oportunidades dentro del ecosistema de 42, creando una comunidad práctica donde estudiantes, alumni y emprendedores puedan colaborar, validar sus ideas y convertirlas en proyectos reales.
           </p>
@@ -140,7 +140,7 @@ export default function Home() {
               
               <h2 className="section-title text-center mb-1 h2">5 días de sprint</h2>
               <p>🟣 <strong>30 SEP Lanzamiento.</strong> </p>
-              <p>🟣 <strong>1 OCT, 13:00 Cierre Inscripciones.</strong> </p>
+              <p>🟣 <strong>1 OCT, 16:00 Cierre Inscripciones.</strong> </p>
               <p>🟣 <strong>6 OCT, 18:00 Code Freeze.</strong> Cierre de repositorios en GitHub. No se aceptan nuevos commits.</p>
               <p>🟣 <strong>7 OCT, 13:00 Peer-Evaluation.</strong> Equipos validan entre sí los repositorios y aseguran que los proyectos cumplen los requisitos mínimos.</p>
               <p>🟣 <strong>7 OCT, 16:00 Demo Day en Studio 42.</strong> 4 min Pitch + 2 min Q&A frente al jurado + resultado de peer evaluation.</p>
@@ -157,6 +157,7 @@ export default function Home() {
                 <a className="text-center d-block mt-3 fw-bold btn btn-warning btn-lg" href={siteConfig.hackathonUrl}>
                   ¡Inscríbete ahora!
                 </a>
+                <small><em>¡El plazo de inscripción termina a las 16:00, aprovecha!</em></small>
               </div>
             </div>
           </div>
