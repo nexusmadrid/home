@@ -4,7 +4,6 @@ import { FaUsers, FaCode, FaBookOpen, FaWhatsapp } from 'react-icons/fa'
 import { siteConfig } from '../siteConfig'
 import EventsCarousel from '../components/Home/EventsCarousel'
 import HeroSection from '../components/Home/Hero'
-import qrCode from "../assets/images/brand/nexusqr.png"
 
 export default function Home() {
   return (
